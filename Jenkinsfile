@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                ls -lt
+                echo "Building from detected changes on branch: ${BRANCH_NAME}"
                 '''
             }
         }
